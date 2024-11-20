@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 from getpass import getpass
 from netmiko import ConnectHandler
-
+# Check if NETMIKO is defined as env variable
 password = os.getenv("NETMIKO")
 if not password:
     password = getpass("Enter your Netmiko password: ")
