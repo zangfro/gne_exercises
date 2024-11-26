@@ -1,0 +1,11 @@
+---
+name: GitHub Actions Exercise1
+
+on:
+  - push
+
+jobs:
+  hello:
+    runs-on: "ubuntu-22.04"
+    steps:
+      - run: echo "Hello!"
