@@ -8,7 +8,7 @@ jobs:
   python-setup:
     runs-on: "ubuntu-22.04"
     steps:
-      - uses: actions/checkoutv4
+      - uses: actions/checkout@v4
 
       - name: "Setup Python 3.12"
         uses: actions/setup@v5
