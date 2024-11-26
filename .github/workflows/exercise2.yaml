@@ -1,0 +1,19 @@
+---
+name: GitHub Actions Exercise2
+
+on:
+  - push
+
+jobs:
+  python-setup:
+    runs-on: "ubuntu-22.04"
+    steps:
+      - uses: actions/checkoutv4
+
+      - name: "Setup Python 3.12"
+        uses: actions/setup@v5
+        with:
+          python-version: "3.12"
+
+      - run: |
+          python3 --version
